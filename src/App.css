@@ -1,30 +1,82 @@
+:root {
+  --main-color: #5c47d3;
+}
 body {
   background-color: black;
 }
 
 h1 {
   font-size: 30px;
-  color: black;
+  color: var(--main-color);
   font-weight: bold;
 }
+h2 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
 
+/* -------------------------------- */
+/* ------------- MAIN ------------- */
+/* -------------------------------- */
 .container {
   display: flex;
-  /* border: 1px solid red; */
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 800px;
+  width: 600px;
   gap: 30px;
   border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 15px 10px;
 }
 
-.container form {
-  border: 3px solid green;
-}
 .contactList {
   display: flex;
-  border: 1px solid blue;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.contact {
+  display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: whitesmoke;
+  align-items: center;
+  border-radius: 5px;
+}
+button {
+  background-color: #eb3730;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #c8090b;
+}
+
+input {
+  border: none;
+  background-color: lightgray;
+  padding: 10px 6px;
+  border-radius: 10px;
+}
+.inputUser {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.inputUser .addList {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+.inputUser .addList:hover {
+  cursor: pointer;
+  opacity: 0.85;
 }
